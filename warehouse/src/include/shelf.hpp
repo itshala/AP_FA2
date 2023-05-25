@@ -4,9 +4,8 @@
 
 class Shelf
 {
-private:
-    std::array<Pallet, 4> Pallets;
 public:
+    std::array<Pallet, 4> Pallets;
     Shelf();
     bool swapPallet(int slot, int slot2);
 

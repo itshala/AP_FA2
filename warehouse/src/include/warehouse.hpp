@@ -1,16 +1,19 @@
-class warehouse
+#include <vector>
+#include "employee.hpp"
+#include "shelf.hpp"
+class Warehouse
 {
 private:
-    /* data */
+    std::vector<Employee> employees;
+    std::vector<Shelf> shelves;
+
 public:
-    warehouse(/* args */);
-    ~warehouse();
+    Warehouse();
+    void addEmployee(const Employee& employee);
+    void addShelf(const Shelf& shelf);
+    bool rearrangeShelf(Shelf& shelf);
+    bool pickItems(const std::string& itemName, int itemCount);
+
 };
 
-warehouse::warehouse(/* args */)
-{
-}
 
-warehouse::~warehouse()
-{
-}

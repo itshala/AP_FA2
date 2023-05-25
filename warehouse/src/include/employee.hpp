@@ -1,16 +1,17 @@
-class employee
+#include <string>
+class Employee
 {
 private:
-    /* data */
+    const std::string name;
+    bool busy;
+    bool forkliftCertificate;
 public:
-    employee(/* args */);
-    ~employee();
+    Employee(std::string& name, bool forkliftCertificate);
+    std::string getName();
+    bool getBusy();
+    void setBusy(bool busy);
+    bool getForkliftCertificate();
+    void setForkliftCertificate(bool forkliftCertificate);
 };
 
-employee::employee(/* args */)
-{
-}
 
-employee::~employee()
-{
-}
